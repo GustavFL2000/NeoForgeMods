@@ -9,7 +9,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MoreMetals.MOD_ID);
 
-    public static final DeferredItem<Item> SILVER = ITEMS.register("silver" ,
+    public static final DeferredItem<Item> SILVERINGOT = ITEMS.register("silveringot" ,
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
