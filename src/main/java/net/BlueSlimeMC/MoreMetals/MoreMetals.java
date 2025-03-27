@@ -73,6 +73,8 @@ public class MoreMetals {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.SILVERINGOT);
+            event.accept(ModItems.RAWSILVER);
+            event.accept(ModItems.SILVERNUGGET);
         }
     }
 

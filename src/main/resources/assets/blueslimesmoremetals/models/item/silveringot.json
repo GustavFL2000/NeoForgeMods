@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "moremetal:item/silveringot"
+    "layer0": "blueslimesmoremetals:item/silver_ingot"
   }
 }
