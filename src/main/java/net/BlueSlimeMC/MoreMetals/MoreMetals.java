@@ -1,5 +1,6 @@
 package net.BlueSlimeMC.MoreMetals;
 
+import net.BlueSlimeMC.MoreMetals.block.ModBlocks;
 import net.BlueSlimeMC.MoreMetals.item.ModItems;
 import org.slf4j.Logger;
 
@@ -56,6 +57,7 @@ public class MoreMetals {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -70,13 +72,22 @@ public class MoreMetals {
     }
 
     // Add the example block item to the building blocks tab
+    // ...
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.SILVERINGOT);
             event.accept(ModItems.RAWSILVER);
             event.accept(ModItems.SILVERNUGGET);
         }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.SILVEBLOCK);
+        }
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(ModBlocks.SILVERORE);
+            event.accept(ModBlocks.RAWSILVEBLOCK);
+        }
     }
+
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent

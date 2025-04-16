@@ -1,6 +1,10 @@
 {
   "item.blueslimesmoremetals.silveringot": "Silver Ingot",
   "item.blueslimesmoremetals.rawsilver": "Raw Silver",
-  "item.blueslimesmoremetals.silvernugget": "Silver Nugget"
+  "item.blueslimesmoremetals.silvernugget": "Silver Nugget",
+
+  "block.blueslimesmoremetals.silverore": "Silver Ore",
+  "block.blueslimesmoremetals.silverblock": "Block of Silver",
+  "block.blueslimesmoremetals.rawsilverblock": "Block of Raw Silver"
 
 }
